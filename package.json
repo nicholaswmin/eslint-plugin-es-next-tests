@@ -1,0 +1,14 @@
+{
+  "name": "eslint-plugin-es-next-tests",
+  "version": "0.1.0",
+  "private": true,
+  "description": "an eslint plugin for sane unit tests",
+  "type": "module",
+  "exports": "./src/index.js",
+  "engines": { "node": ">=24" },
+  "scripts": {
+    "test": "node --test --import ./tests/utils/setup.js --test-timeout=5000 \"**/*.test.js\""
+  },
+  "peerDependencies": { "eslint": "^10.0.0" },
+  "devDependencies": { "eslint": "^10.12.0" }
+}
